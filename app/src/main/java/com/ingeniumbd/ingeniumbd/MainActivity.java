@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity
 
                 if (menuItemId==R.id.email)
                 {
-
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/pages/Khans/158013767557799")));
 
                 }
 
