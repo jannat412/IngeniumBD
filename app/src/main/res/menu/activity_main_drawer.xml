@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_software"
+            android:icon="@drawable/software"
+            android:title="Software Development" />
+        <item
+            android:id="@+id/nav_webdesign"
+            android:icon="@drawable/web"
+            android:title="Web Design And Development" />
+        <item
+            android:id="@+id/nav_android"
+            android:icon="@drawable/android"
+            android:title="Android Apps Development" />
+        <item
+            android:id="@+id/nav_marketing"
+            android:icon="@drawable/market"
+            android:title="Digital Marketing" />
+        <item
+            android:id="@+id/nav_graphics"
+            android:icon="@drawable/graphics"
+            android:title="Graphics Design" />
+        <item
+            android:id="@+id/nav_training"
+            android:icon="@drawable/training"
+            android:title="IT Training" />
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@drawable/product"
+            android:title="our Product" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

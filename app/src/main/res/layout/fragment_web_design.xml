@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.ingeniumbd.ingeniumbd.Fragments.WebDesign">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:src="@drawable/web"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:textColor="#00427E"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/Web_Design" />
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

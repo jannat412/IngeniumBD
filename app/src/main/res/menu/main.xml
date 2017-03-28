@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_phone"
+        android:orderInCategory="100"
+        android:title="Phone"
+
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_email"
+        android:orderInCategory="100"
+        android:title="Email"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_web"
+        android:orderInCategory="100"
+        android:title="Website"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_play"
+        android:orderInCategory="100"
+        android:title="Play Store"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_facebook"
+        android:orderInCategory="100"
+        android:title="Facebook"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_twitter"
+        android:orderInCategory="100"
+        android:title="Twitter"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_google"
+        android:orderInCategory="100"
+        android:title="Google+"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_youtube"
+        android:orderInCategory="100"
+        android:title="Youtube"
+        app:showAsAction="never" />
+</menu>

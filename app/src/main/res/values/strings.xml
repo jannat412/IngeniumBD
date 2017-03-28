@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">IngeniumBD</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Home_Content">\nIngeniumBD provides IT consultation, Web Design and Development, Cross Platform Mobile Application Development, IT training as one of the top IT service provider.\n\nThe company has achieved outstanding success in developing and delivering a stream of innovative products, services and solutions in the given field. We offer world-class services through agile or traditional methodologies by relying on the most talented pool of engineers.\n</string>
+    <string name="Web_Design">\nFrom complex e commerce solutions to utilizing third party tools and APIs, we work to develop a website that flawlessly operates, reinforces your brand, and delivers on user expectations, often unstable website viewing environments. Exceptional web design, detailed development and unique digital marketing, perfectly blended to create engaging user experiences. Our aim is turning great ideas into compelling websites and software.\n</string>
+    <string name="Android">\nWe create highly polished application for startups and enterprise clients. Our aim to delivering innovative mobile apps with a rock solid quality code underneath .Our developer’s team is applying all the benefits of multi-platform technology as well as native apps development across iOS, Android, Windows smartphones.\n</string>
+    <string name="Graphics">\nWe create brand identities and creative campaigns that capture people’s imaginations. We’ll give you the creative push you need to go bigger, better and faster. So if you fancy a date with great design, content, and business boosting creativity, give us a call.\n</string>
+    <string name="Marketing">Digital marketing is the promotion of products or brands via one or more forms
+        of electronic media and differs from traditional marketing in that it involves the use of channels and
+        methods that enable an organization to analyze marketing campaigns and understand what is working and what
+        is not typically in real time.</string>
+    <string name="Software">\nSoftware development is the process of developing software through successive phases in an orderly way. This process includes not only the actual writing of code but also the preparation of requirements and objectives, the design of what is to be coded, and confirmation that what is developed has met objectives.</string>
+
+</resources>

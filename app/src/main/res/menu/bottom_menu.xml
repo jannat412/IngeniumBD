@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/email"
+        android:orderInCategory="100"
+        android:icon="@drawable/btmemail"
+        android:title="Email"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/web"
+        android:orderInCategory="100"
+        android:icon="@drawable/btmweb"
+        android:title="Website"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/play"
+        android:orderInCategory="100"
+        android:icon="@drawable/btmplaystore"
+        android:title="Play Store"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/facebook"
+        android:icon="@drawable/btmfacebook"
+        android:orderInCategory="100"
+        android:title="Facebook"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/phone"
+        android:icon="@drawable/btmphone"
+        android:orderInCategory="100"
+        android:title="Call us"
+        app:showAsAction="never" />
+
+</menu>
