@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity
 
                 if (menuItemId==R.id.email)
                 {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/pages/Khans/158013767557799")));
 
                 }
 
@@ -80,6 +79,7 @@ public class MainActivity extends AppCompatActivity
 
                 else if (menuItemId==R.id.facebook)
                 {
+                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/pages/Khans/158013767557799")));
 
                 }
 
@@ -104,18 +104,7 @@ public class MainActivity extends AppCompatActivity
         mBottombar.mapColorForTab(3,"#303F9F");
         mBottombar.mapColorForTab(4,"#AD1457");
 
-        BottomBarBadge badge;
 
-        badge=mBottombar.makeBadgeForTabAt(1,"#6A1B9A",18);
-
-        badge.show();
-
-        badge=mBottombar.makeBadgeForTabAt(2,"#2196F3",12);
-
-        badge.show();
-
-        badge=mBottombar.makeBadgeForTabAt(3,"#D50000",20);
-        badge.show();
     }
 
     @Override
