@@ -3,43 +3,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_phone"
-        android:orderInCategory="100"
-        android:title="Phone"
-
-        app:showAsAction="never" />
+        android:icon="@drawable/btmphone"
+        android:orderInCategory="1"
+        android:title="Phone" />
     <item
         android:id="@+id/action_email"
-        android:orderInCategory="100"
-        android:title="Email"
-        app:showAsAction="never" />
+        android:icon="@drawable/btmemail"
+        android:orderInCategory="2"
+        android:title="Email" >
+    </item>
     <item
         android:id="@+id/action_web"
-        android:orderInCategory="100"
-        android:title="Website"
-        app:showAsAction="never" />
+        android:icon="@drawable/btmweb"
+        android:orderInCategory="3"
+        android:title="Website" />
     <item
         android:id="@+id/action_play"
-        android:orderInCategory="100"
+        android:orderInCategory="4"
         android:title="Play Store"
-        app:showAsAction="never" />
+        android:icon="@drawable/btmplaystore"
+        app:showAsAction="always"/>
     <item
-        android:id="@+id/action_facebook"
-        android:orderInCategory="100"
-        android:title="Facebook"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/action_twitter"
-        android:orderInCategory="100"
-        android:title="Twitter"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/action_google"
-        android:orderInCategory="100"
-        android:title="Google+"
-        app:showAsAction="never" />
+        android:icon="@drawable/btmemail"
+        android:orderInCategory="2"
+        android:title="Social Network" >
+        <menu>
+            <item
+                android:id="@+id/action_facebook"
+                android:orderInCategory="5"
+                android:title="Facebook"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_twitter"
+                android:orderInCategory="6"
+                android:title="Twitter"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_google"
+                android:orderInCategory="7"
+                android:title="Google+" />
+        </menu>
+    </item>
+
     <item
         android:id="@+id/action_youtube"
-        android:orderInCategory="100"
+        android:orderInCategory="8"
         android:title="Youtube"
         app:showAsAction="never" />
 </menu>

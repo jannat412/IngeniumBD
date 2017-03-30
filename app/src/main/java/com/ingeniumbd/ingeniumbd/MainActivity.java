@@ -64,28 +64,62 @@ public class MainActivity extends AppCompatActivity
 
                 if (menuItemId==R.id.email)
                 {
+                    final Intent intent = new Intent(android.content.Intent.ACTION_SEND);
+                    intent.setType("text/plain");
+                    final PackageManager pm = getPackageManager();
+                    final List<ResolveInfo> matches = pm.queryIntentActivities(intent, 0);
+                    ResolveInfo best = null;
+                    for (final ResolveInfo info : matches)
+                        if (info.activityInfo.packageName.endsWith(".gm") ||
+                                info.activityInfo.name.toLowerCase().contains("gmail")) best = info;
+                    if (best != null)
+                    {
+                        intent.setClassName(best.activityInfo.packageName, best.activityInfo.name);
 
+                        String[] TO = {"ingeniumbd04@gmail.com"};
+                        String[] CC = {"ingeniumbd4@gmail.com"};
+                        intent.setData(Uri.parse("mailto:"));
+                        intent.setType("text/plain");
+                        intent.putExtra(Intent.EXTRA_EMAIL, TO);
+                        intent.putExtra(Intent.EXTRA_CC, CC);
+                        intent.putExtra(Intent.EXTRA_SUBJECT, "Contract with ingenium");
+                        intent.putExtra(Intent.EXTRA_TEXT, "Email message goes here");
+                        startActivity(intent);
+                    }
+                    else {
+                        Intent intent1 = new Intent(Intent.ACTION_SEND);
+
+                        String[] TO = {"ingeniumbd04@gmail.com"};
+                        String[] CC = {"ingeniumbd4@gmail.com"};
+                        intent1.setData(Uri.parse("mailto:"));
+                        intent1.setType("text/plain");
+                        intent1.putExtra(Intent.EXTRA_EMAIL, TO);
+                        intent1.putExtra(Intent.EXTRA_CC, CC);
+                        intent1.putExtra(Intent.EXTRA_SUBJECT, "Contract with ingenium");
+                        intent1.putExtra(Intent.EXTRA_TEXT, "Email message goes here");
+                        startActivity(intent1);
+                    }
                 }
 
                 else if(menuItemId==R.id.web)
                 {
-
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.ingeniumbd.com")));
                 }
 
                 else if (menuItemId==R.id.play)
                 {
-
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/developer?id=ingenium%20BD&hl=en")));
                 }
 
                 else if (menuItemId==R.id.facebook)
                 {
-                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/pages/Khans/158013767557799")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/ingeniumbd/")));
 
                 }
 
                 else if (menuItemId==R.id.phone)
                 {
-
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "+8801763432203")));
                 }
 
 
